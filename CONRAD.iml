@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar://$MODULE_DIR$/lib/BoneJ_.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/gluegen-rt-natives-linux-amd64.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/gluegen-rt-natives-linux-i586.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/gluegen-rt-natives-macosx-universal.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/gluegen-rt-natives-solaris-amd64.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/gluegen-rt-natives-solaris-i586.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/gluegen-rt-natives-windows-amd64.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/gluegen-rt-natives-windows-i586.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/gluegen-rt.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/hough-0.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/ij.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/ImageJ_SURF_2009-12-01_08.19.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/Jama-1.0.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jcublas-0.3.0a.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jcuda-0.3.0a.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jcudpp-0.3.0a.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jcufft-0.3.0a.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/joal-natives-linux-amd64.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/joal-natives-linux-i586.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/joal-natives-macosx-universal.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/joal-natives-solaris-amd64.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/joal-natives-solaris-i586.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/joal-natives-windows-amd64.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/joal-natives-windows-i586.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/joal.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jocl-natives-linux-amd64.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jocl-natives-linux-i586.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jocl-natives-macosx-universal.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jocl-natives-solaris-amd64.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jocl-natives-solaris-i586.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jocl-natives-windows-amd64.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jocl-natives-windows-i586.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jocl.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jogl-all-natives-linux-amd64.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jogl-all-natives-linux-i586.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jogl-all-natives-macosx-universal.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jogl-all-natives-solaris-amd64.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jogl-all-natives-solaris-i586.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jogl-all-natives-windows-amd64.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jogl-all-natives-windows-i586.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jogl-all.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jtransforms-2.3.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jzlib-1.0.7.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/latexlet.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/qdox-1.12.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/yacas.1.2.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/plugins/3D/Interactive_3D_Surface_Plot.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/plugins/3D/Volume_Viewer.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/plugins/Analyze/Cell_Counter.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/plugins/Analyze/Color_Histogram.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/plugins/Input-Output/Animated_Gif.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/plugins/Input-Output/Deltavision_Opener.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/plugins/Input-Output/loci_tools.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/plugins/Input-Output/LSM_Reader.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/plugins/Input-Output/nifti_io.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/plugins/Input-Output/ome_tools.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/plugins/Input-Output/QuickTime_Plugins.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/plugins/VolumeJ/bij.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/weka.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/weka-src.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/trainablesegmentation.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jmathplot.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/wekaBRF_1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jpop.0.7.5.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/fastica-1.11.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/sis-jhdf5-batteries_included.jar!/" />
+    <src_description expected_position="0">
+      <src_folder value="file://$MODULE_DIR$/src" expected_position="0" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="BoneJ_.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/BoneJ_.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="gluegen-rt-natives-linux-amd64.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/gluegen-rt-natives-linux-amd64.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="gluegen-rt-natives-linux-i586.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/gluegen-rt-natives-linux-i586.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="gluegen-rt-natives-macosx-universal.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/gluegen-rt-natives-macosx-universal.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="gluegen-rt-natives-solaris-amd64.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/gluegen-rt-natives-solaris-amd64.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="gluegen-rt-natives-solaris-i586.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/gluegen-rt-natives-solaris-i586.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="gluegen-rt-natives-windows-amd64.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/gluegen-rt-natives-windows-amd64.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="gluegen-rt-natives-windows-i586.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/gluegen-rt-natives-windows-i586.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="gluegen-rt.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/gluegen-rt.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hough-0.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/hough-0.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ij.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/ij.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/lib/ij149v-src.zip!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ImageJ_SURF_2009-12-01_08.19.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/ImageJ_SURF_2009-12-01_08.19.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Jama-1.0.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/Jama-1.0.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jcublas-0.3.0a.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jcublas-0.3.0a.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jcuda-0.3.0a.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jcuda-0.3.0a.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jcudpp-0.3.0a.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jcudpp-0.3.0a.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jcufft-0.3.0a.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jcufft-0.3.0a.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="joal-natives-linux-amd64.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/joal-natives-linux-amd64.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="joal-natives-linux-i586.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/joal-natives-linux-i586.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="joal-natives-macosx-universal.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/joal-natives-macosx-universal.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="joal-natives-solaris-amd64.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/joal-natives-solaris-amd64.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="joal-natives-solaris-i586.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/joal-natives-solaris-i586.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="joal-natives-windows-amd64.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/joal-natives-windows-amd64.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="joal-natives-windows-i586.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/joal-natives-windows-i586.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="joal.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/joal.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jocl-natives-linux-amd64.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jocl-natives-linux-amd64.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jocl-natives-linux-i586.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jocl-natives-linux-i586.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jocl-natives-macosx-universal.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jocl-natives-macosx-universal.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jocl-natives-solaris-amd64.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jocl-natives-solaris-amd64.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jocl-natives-solaris-i586.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jocl-natives-solaris-i586.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jocl-natives-windows-amd64.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jocl-natives-windows-amd64.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jocl-natives-windows-i586.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jocl-natives-windows-i586.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jocl.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jocl.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jogl-all-natives-linux-amd64.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jogl-all-natives-linux-amd64.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jogl-all-natives-linux-i586.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jogl-all-natives-linux-i586.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jogl-all-natives-macosx-universal.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jogl-all-natives-macosx-universal.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jogl-all-natives-solaris-amd64.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jogl-all-natives-solaris-amd64.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jogl-all-natives-solaris-i586.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jogl-all-natives-solaris-i586.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jogl-all-natives-windows-amd64.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jogl-all-natives-windows-amd64.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jogl-all-natives-windows-i586.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jogl-all-natives-windows-i586.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jogl-all.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jogl-all.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jtransforms-2.3.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jtransforms-2.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jzlib-1.0.7.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jzlib-1.0.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="latexlet.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/latexlet.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="qdox-1.12.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/qdox-1.12.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="yacas.1.2.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/yacas.1.2.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Interactive_3D_Surface_Plot.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/plugins/3D/Interactive_3D_Surface_Plot.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Volume_Viewer.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/plugins/3D/Volume_Viewer.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Cell_Counter.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/plugins/Analyze/Cell_Counter.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Color_Histogram.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/plugins/Analyze/Color_Histogram.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Animated_Gif.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/plugins/Input-Output/Animated_Gif.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Deltavision_Opener.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/plugins/Input-Output/Deltavision_Opener.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="loci_tools.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/plugins/Input-Output/loci_tools.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="LSM_Reader.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/plugins/Input-Output/LSM_Reader.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="nifti_io.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/plugins/Input-Output/nifti_io.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ome_tools.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/plugins/Input-Output/ome_tools.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="QuickTime_Plugins.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/plugins/Input-Output/QuickTime_Plugins.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="bij.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/plugins/VolumeJ/bij.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="module-library">
+      <library name="weka.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/weka.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="weka-src.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/weka-src.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="trainablesegmentation.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/trainablesegmentation.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/lib/trainablesegmentation.zip!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jmathplot.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jmathplot.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="wekaBRF_1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/wekaBRF_1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jpop.0.7.5.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jpop.0.7.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="fastica-1.11.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/fastica-1.11.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/lib/fastica-1.11-src.zip!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="sis-jhdf5-batteries_included.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/sis-jhdf5-batteries_included.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="junit4">
+        <CLASSES>
+          <root url="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="MIPDATests" level="project" />
+  </component>
+</module>
