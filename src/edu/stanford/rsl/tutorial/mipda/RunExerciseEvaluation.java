@@ -44,7 +44,6 @@ public class RunExerciseEvaluation {
         
 		if (choice.equals("Intro")) {
 			junitCore.run(IntroTestClass.class);
-			//org.junit.runner.JUnitCore.main("ModuleCourseIntroduction.IntroTestClass");
 		}
 		else if (choice.equals("SVD")) {
 			junitCore.run(SVDTestClass.class);
