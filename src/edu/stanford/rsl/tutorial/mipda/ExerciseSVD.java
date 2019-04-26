@@ -15,6 +15,8 @@ import edu.stanford.rsl.conrad.utils.VisualizationUtil;
 import ij.IJ;
 import ij.ImageJ;
 
+import static edu.stanford.rsl.conrad.numerics.SimpleOperators.multiplyMatrixProd;
+
 /**
  * Singular Value Decomposition
  * Programming exercise for module "Mathematical Tools"
@@ -88,19 +90,19 @@ public class ExerciseSVD {
         //with rank deficiency one and two identical non-zero singular values
         int svdNewRank = 0;
         if (svd != null) {
-            svdNewRank = exsvd.newRank(svd.rank(), 1); //There are TODO-s here!
+            svdNewRank = exsvd.newRank(svd.rank(), 1);
         }
-        exsvd.optimizationProblem1(A, svdNewRank); //There are TODO-s here!
+        exsvd.optimizationProblem1(A, svdNewRank);
 
         //estimate the matrix A that minimizes sum_{i=1}^{4} b'_{i} A b_{i}
         //under the constraint ||A||_{F} = 1
         exsvd.optimizationProblem2(vectors);
 
         //compute the image matrix of rank 1 that best approximates an image
-        exsvd.optimizationProblem3(image, rank); //There are TODO-s here!
+        exsvd.optimizationProblem3(image, rank);
 
         //compute the regression line through the given 2-D points
-        exsvd.optimizationProblem4(xCoords, yCoords); //There are TODO-s here!
+        exsvd.optimizationProblem4(xCoords, yCoords);
 
     }
 
@@ -112,8 +114,8 @@ public class ExerciseSVD {
 
         //Check output: re-compute A = U * S * V^T
         if (svd != null) {
-            SimpleMatrix temp = SimpleOperators.multiplyMatrixProd(svd.getU(), svd.getS());
-            SimpleMatrix A2 = SimpleOperators.multiplyMatrixProd(temp, svd.getV().transposed());
+            SimpleMatrix temp = multiplyMatrixProd(svd.getU(), svd.getS());
+            SimpleMatrix A2 = multiplyMatrixProd(temp, svd.getV().transposed());
             System.out.println("U * S * V^T: " + A2.toString());
         }
 
@@ -139,8 +141,8 @@ public class ExerciseSVD {
             }
         }
 
-        SimpleMatrix templowrank = SimpleOperators.multiplyMatrixProd(svd.getU(), Slowrank);
-        SimpleMatrix Alowrank = SimpleOperators.multiplyMatrixProd(templowrank, svd.getV().transposed());
+        SimpleMatrix templowrank = multiplyMatrixProd(svd.getU(), Slowrank);
+        SimpleMatrix Alowrank = multiplyMatrixProd(templowrank, svd.getV().transposed());
         if (Alowrank != null) {
             System.out.println("A rank deficient = " + Alowrank.toString());
         }
@@ -168,7 +170,7 @@ public class ExerciseSVD {
         //SimpleVector xn = SimpleOperators.multiply(Ainv, bn);
 
         // compute and show percentual change
-        SimpleVector xPercentage = SimpleOperators.divideElementWise(xn, diff).multipliedBy(1e2);
+        SimpleVector xPercentage = SimpleOperators.divideElementWise(xn, x);
         return xPercentage;
 
     }
@@ -178,7 +180,7 @@ public class ExerciseSVD {
     }
 
     public int newRank(int oldRank, int rankDeficiency) {
-        return 0; //TODO
+        return oldRank - rankDeficiency;
     }
 
     public SimpleMatrix optimizationProblem1(SimpleMatrix A, int svdNewRank) {
@@ -207,13 +209,8 @@ public class ExerciseSVD {
         DecompositionSVD svd = new DecompositionSVD(A);
 
         //Compute mean of remaining singular values
-        double mean = 0;
-
-        for (int i = 0; i < svdNewRank; i++) {
-            mean += svd.getS().getElement(i, i);
-        }
-
-        mean /= svdNewRank;
+        double mean = svd.getS().getDiag().getSubVec(0, svdNewRank)
+                .norm(SimpleVector.VectorNormType.VEC_NORM_L1) / svdNewRank;
 
         //Create new Singular matrix
         SimpleMatrix Slowrank = new SimpleMatrix(svd.getS().getRows(), svd.getS().getCols());
@@ -224,8 +221,8 @@ public class ExerciseSVD {
         }
 
         //compute A0
-        SimpleMatrix tempA0 = null; //TODO
-        SimpleMatrix A0 = null; //TODO
+        SimpleMatrix tempA0 = multiplyMatrixProd(svd.getU(), Slowrank);
+        SimpleMatrix A0 = multiplyMatrixProd(tempA0, svd.getV().transposed());
 
         if (A0 != null) {
             System.out.println("A0 = " + A0.toString());
@@ -292,15 +289,15 @@ public class ExerciseSVD {
             imageRanks.setSubGrid(k, imageRank);
 
             // evaluate RMSE for the k-th approximation
-            error[k] = calculateRMSE(image, imageRank); //There is a TODO here!
+            error[k] = calculateRMSE(image, imageRank);
         }
 
         imageRanks.show("Stack of approximations");
         VisualizationUtil.createPlot("Rank-Error-Plot", error).show();
 
         //Direct estimation of rank K (using rank 1-matrices, cf. lecture) [alternative solution]
-        SimpleMatrix usK = SimpleOperators.multiplyMatrixProd(svd.getU().getSubMatrix(0, 0, svd.getU().getRows(), rank), svd.getS().getSubMatrix(0, 0, rank, rank));
-        SimpleMatrix IapproxK = SimpleOperators.multiplyMatrixProd(usK, svd.getV().getSubMatrix(0, 0, svd.getV().getRows(), rank).transposed());
+        SimpleMatrix usK = multiplyMatrixProd(svd.getU().getSubMatrix(0, 0, svd.getU().getRows(), rank), svd.getS().getSubMatrix(0, 0, rank, rank));
+        SimpleMatrix IapproxK = multiplyMatrixProd(usK, svd.getV().getSubMatrix(0, 0, svd.getV().getRows(), rank).transposed());
 
         //Transfer back to grid
         Grid2D imageRankK = new Grid2D(image.getWidth(), image.getHeight());
@@ -316,7 +313,7 @@ public class ExerciseSVD {
 
     public float calculateRMSE(Grid2D image1, Grid2D image2) {
         NumericGridOperator op = new NumericGridOperator();
-        float rmse = 0; //TODO
+        float rmse = op.rmse(image1, image2);
         return rmse;
     }
 
@@ -339,10 +336,10 @@ public class ExerciseSVD {
         SimpleVector aCol = new SimpleVector(xCoords.length);
         SimpleVector y = new SimpleVector(xCoords.length);
 
-        for (int i = 0; i < xCoords.length; i++)//TODO
+        for (int i = 0; i < xCoords.length; i++)
         {
-            aCol.setElementValue(i, 0);//TODO
-            y.setElementValue(i, 0);//TODO
+            aCol.setElementValue(i, xCoords[i]);
+            y.setElementValue(i, yCoords[i]);
         }
 
         A4.setColValue(0, aCol);
@@ -460,8 +457,8 @@ public class ExerciseSVD {
         System.out.println("Sinv = " + Sinv.toString());
         System.out.println("Srec = " + svd.getreciprocalS().toString());
 
-        SimpleMatrix tempInv = SimpleOperators.multiplyMatrixProd(svd.getV(), svd.getreciprocalS());
-        SimpleMatrix Ainv = SimpleOperators.multiplyMatrixProd(tempInv, svd.getU().transposed());
+        SimpleMatrix tempInv = multiplyMatrixProd(svd.getV(), svd.getreciprocalS());
+        SimpleMatrix Ainv = multiplyMatrixProd(tempInv, svd.getU().transposed());
         System.out.println("Ainv        = " + Ainv.toString());
         System.out.println("A.inverse() = " + A.inverse(InversionType.INVERT_SVD));
         return Ainv;
